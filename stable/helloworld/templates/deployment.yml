@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: "helloworld"
+  labels:
+spec:
+  replicas: {{.Values.replicaCount}}
+  template:
+    metadata:
+      labels:
+        app: "helloworld"
+    spec:
+      containers:
+      - image: nginx:1.11.4
+        name: nginx
+        ports:
+        - containerPort: 80
+        command:
+        - /bin/bash
+        - -c
+        - 'echo "<h1>{{.Values.message}}</h1>" > /usr/share/nginx/html/index.html; /usr/sbin/nginx -g "daemon off;"'
