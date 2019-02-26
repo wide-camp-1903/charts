@@ -1,12 +1,17 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: "helloworld"
-  labels:
+  name: helloworld
+  namespace: helloworld
 spec:
-  replicas: {{.Values.replicaCount}}
+  # replicas: {{.Values.replicaCount}}
+  replicas: 2
+  selector:
+    matchLabels:
+      app: helloworld
   template:
     metadata:
+      namespace: helloworld
       labels:
         app: "helloworld"
     spec:
