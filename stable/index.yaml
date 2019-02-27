@@ -3,9 +3,9 @@ entries:
   gcp-helloworld:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-02-26T21:46:10.754418+09:00
+    created: 2019-02-27T14:29:08.400628+09:00
     description: A Helm chart of GCP kubernetes sample
-    digest: 3ba9628ef708459d689022051d5f0f5d2d84bff4f9c86b9a8f9f62219025782e
+    digest: ac3793070277a25f58d5bddfe486c2737e338398d953a12fe0fba3eebbe4d21a
     name: gcp-helloworld
     urls:
     - gcp-helloworld-1.0.0.tgz
@@ -13,11 +13,11 @@ entries:
   helloworld:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-02-26T21:46:10.75598+09:00
+    created: 2019-02-27T14:29:08.401829+09:00
     description: Hello world
     digest: bfdc7bb743ba98f0b4ee814115b70ed805ac0c5aed1802eb1b1b9f6f1f566688
     name: helloworld
     urls:
     - helloworld-1.0.0.tgz
     version: 1.0.0
-generated: 2019-02-26T21:46:10.751302+09:00
+generated: 2019-02-27T14:29:08.399874+09:00
